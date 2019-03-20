@@ -30,3 +30,6 @@ myInformation.idInfo = {//objenin bütün property lerini değiştirme
 }
 
 console.log(myInformation.idInfo)
+
+myInformation.idInfo.homeTown = 'İstanbul'
+console.log(myInformation.idInfo)
