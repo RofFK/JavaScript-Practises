@@ -11,7 +11,7 @@
  */
 
 /**
- * git projesi olusturmak icin 'git init' komutunu yaziyoruz terminale
+ * git projesi olusturmak icin 'git init' komutunu yaziyoruz Sl
  * 
  * 'git add .' stash asamasiana gondermis git add . 
  * ' git commit -m "commit mesaji yani yaptigin degisikligi anlatan bir mesaj" ' komutu yaptigimiz degisikliklere bir mesaj vermemize      * olanak saglar.
