@@ -15,4 +15,5 @@
  * 
  * 'git add .' stash asamasiana gondermis git add . 
  * ' git commit -m "commit mesaji yani yaptigin degisikligi anlatan bir mesaj" ' komutu yaptigimiz degisikliklere bir mesaj vermemize      * olanak saglar.
+ * ' git push' deyip yenilikler eklenecek
  */
