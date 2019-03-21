@@ -2,6 +2,9 @@ import {
     findPrimeDivisors
 } from './primeDivisors'
 
+import {
+    findGcd
+} from './findGcd'
 
 const calculeteLcd = (number1, number2) => {
     const primeDivisorsOfNumber1 = findPrimeDivisors(number1) // 2 2 3 
@@ -36,7 +39,8 @@ const calculeteLcd = (number1, number2) => {
                     }
                 }
 
-                primeDivisorsOfNumber2[indexOfNumber] = undefined
+                primeDivisorsOfNumber2[indexOfNumber] = undefined//bu değer zaten lcd içerisinde bulunduğu için 
+                //primeDivisorsOfNumber2 listesinden çıkarıyoruz
             }
         }
     }
@@ -72,9 +76,7 @@ console.log(calculeteLcd(12, 64))
 
 
 
-import {
-    findGcd
-} from './findGcd'
+
 
 const findLcd = (number1, number2) => {
     const primeDivisors1 = findPrimeDivisors(number1)
