@@ -33,7 +33,7 @@
 export const isPrime = (number) => {
     //logic
     //return if number is prime or not
-    for (let i = 2; i < number; i++) { //export ettiğimşz için for içinde artık let kullanmamız gerekiyor
+    for (let i = 2; i < number; i++) { //export ettiğimiz için for içinde artık let kullanmamız gerekiyor
         if (number % i === 0) {
             return false
         }
