@@ -102,9 +102,48 @@ for (let i = 0; i < workers.length; i++) {
     }
 }
 
-const marriedOnes = workers.filter((item) => !item.isMarried)
+const some = () => {
+    return 'ahmet'
+}
+
+const ahmet = some()
+
+const marriedOnes = workers.filter((item) => {
+    return item.isMarried
+})
 
 console.log(marriedOnes)
+
+
+const filter = (list, callback) => { //abstraction
+    let listx = []
+    for (let i = 0; i < list.length; i++) {
+        const result = callback(list[i])
+        if (result) {
+            listx.push(list[i])
+        }
+    }
+    return listx
+}
+
+const marriedOnes1 = filter(workers, (item) => item.isMarried)
+console.log(marriedOnes1)
+
+const friends = [
+    'cagdas',
+    'faruk',
+    'fatih',
+    'civan'
+]
+
+// abstraction
+
+const filteredAnimals = filter(friends, (item) => item[0] === 'f')
+
+console.log('#########################')
+console.log(filteredAnimals)
+
+
 
 const ageOlder25 = workers.filter((value) => value.age > 25)
 console.log(ageOlder25)
